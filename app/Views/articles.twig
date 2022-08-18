@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="app/style2.css">
+    <script defer src="fontawesome-free-6.1.2-web/js/all.js"></script>
+    <link rel="icon" href="/android-chrome-512x512.png">
+    <script>let mainNav = document.getElementById("js-menu");
+        let navBarToggle = document.getElementById("js-nav-toggle");
+        navBarToggle.addEventListener("click", function() {
+            mainNav.classList.toggle("active");
+        });</script>
+    <title>Articles</title>
+</head>
+
+<body>
+<div class="container">
+    <a class="weatherwidget-io" href="https://forecast7.com/en/56d9524d11/riga/" data-label_1="RIGA" data-label_2="WEATHER" data-mode="Current" >RIGA WEATHER</a>
+    <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+    <header>
+        <h1>LOGO</h1>
+        <div class="social-media">
+        <a href="http://linkedin.com"><h1 class="social-media-btn"><i class="fa-brands fa-linkedin"></i></h1></a>
+            <a href="http://twitter.com"><h1 class="social-media-btn"><i class="fa-brands fa-square-twitter"></i></h1></a>
+            <a href="http://github.com"><h1 class="social-media-btn"><i class="fa-brands fa-square-github"></i></h1></a>
+            <a href="http://facebook.com"><h1 class="social-media-btn"><i class="fa-brands fa-square-facebook"></i></h1></a>
+            <a href="http://insatgram.com"><h1 class="social-media-btn"><i class="fa-brands fa-square-instagram"></i></h1></a>
+        </div>
+    </header>
+    <hr>
+
+    <nav>
+    <span class="nav-toggle" id="js-nav-toggle">
+
+    </span>
+        <div class="logo">
+            <span class="icon circle-1"></span>
+            <span class="icon circle-2"></span>
+            <span class="icon circle-3"></span>
+        </div>
+        <ul id="js-menu">
+            <li><a href="/">Latvian news</a></li>
+            <li><a href="/tech">Tech</a></li>
+            <li><a href="/sports">Sports</a></li>
+            <li><a href="/business">Business</a></li>
+            <li><a href="/my-articles">My Articles</a></li>
+            <li><a href="/articles/create">Add Article</a></li>
+        </ul>
+    </nav>
+    <div class="grid-container">
+        {% for article in articles %}
+            <div class="item">
+            <span class="test">
+                <a href="{{ article.url }}"><h3 class="title-url" >{{ article.title }}</h3></a>
+                <img alt="Photo not available" src="{{ article.image}}" class="photo">
+                <p class="paragraph">{{ article.description }} {{ article.index }}</p>
+            </span>
+            </div>
+
+        {% endfor %}
+    </div>
+
+</div>
+
+
+</body>
+</html>
