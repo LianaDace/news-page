@@ -57,7 +57,14 @@ HOST_NAME="_your-host-name_"<br>
 DRIVER="pdo_mysql"<br>
 
 
+# And it should look like this:
 
+<p align="center">
+  <img width="700" height="350" src="https://github.com/LianaDace/news-page/blob/main/Screenshot%202022-08-18%20at%2020.24.50.png">
+</p>
+<p align="center">
+  <img width="700" height="350" src="https://github.com/LianaDace/news-page/blob/main/Screenshot%202022-08-18%20at%2020.25.14.png">
+</p>
  
  
  
