@@ -5,10 +5,8 @@
  # To Run This News Page Project You Need:
  
 ````
- - ✅ You should have PHP ^7.4
+ - ✅ You should have PHP 7.4 and up ⬆️
  ````
- 
-  ## How To Launch This Project: 
  
 ❗️[Register here to get API key 🔑](https://newsapi.org)
 
@@ -20,19 +18,19 @@
 ✅[nikic/fast-route](https://packagist.org/packages/nikic/fast-route) <br>
 ✅[Twig](https://packagist.org/packages/twig/twig) <br>
 ✅[PHP-DI](https://php-di.org) <br>
+✅[Guzzle](https://docs.guzzlephp.org/en/stable/) <br>
 ✅[dotenv](https://www.npmjs.com/package/dotenv)
-
 
 
 ### Create:
 
 - create .env file (into main directory) and copy ⬇️ into file
 ````
-NEWSAPI_URL="https://newsapi.org/v2/" <br>
+NEWSAPI_URL="https://newsapi.org/v2/"
 NEWSAPI_KEY=""
 ````
 
-- copy your API 🔑 into file .env NEWSAPI_KEY="✅"
+- copy your API 🔑 into file .env NEWSAPI_KEY="_your-api-key_"
 ````
 Create database and connect with project 
 ````
