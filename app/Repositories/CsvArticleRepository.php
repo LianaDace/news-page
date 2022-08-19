@@ -31,10 +31,10 @@ class CsvArticleRepository implements ArticlesRepository
             exit;
         }
 
-$host = 'localhost';
-$database = 'codelex_news';
-$user = 'liana';
-$pass = 'Ma1jaEm1l1ja';
+$host = $_ENV['HOST_NAME'];
+$database = $_ENV['DB_NAME'];
+$user = $_ENV['USER_NAME'];
+$pass = $_ENV['PASSWORD'];
 $dsn = sprintf("mysql:host=%s;dbname=%s;", $host, $database);
 
 $options = [
