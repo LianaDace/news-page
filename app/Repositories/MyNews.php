@@ -13,11 +13,11 @@ class MyNews implements ArticlesRepository
     {
 
     $connectionParams = [
-       'dbname' => 'codelex_news',
-       'user' => 'liana',
-       'password' => 'Ma1jaEm1l1ja',
-       'host' => 'localhost',
-       'driver' => 'pdo_mysql',
+       'dbname' => $_ENV['DB_NAME'],
+       'user' => $_ENV['USER_NAME'],
+       'password' => $_ENV['PASSWORD'],
+       'host' => $_ENV['HOST_NAME'],
+       'driver' => $_ENV['DRIVER']
    ];
        $conn = \Doctrine\DBAL\DriverManager::getConnection($connectionParams);
        $queryBuilder = $conn->createQueryBuilder();
